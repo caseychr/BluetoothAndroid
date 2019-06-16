@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="Device Name"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/engine_rpm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Engine RPM: " android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/device_name"/>
+    <TextView
+        android:id="@+id/vehicle_speed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Vehicle Speed: " android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/engine_rpm"/>
+    <TextView
+        android:id="@+id/coolant_temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Coolant Temp: " android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/vehicle_speed"/>
+    <TextView
+        android:id="@+id/air_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Air Flow: " android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/coolant_temp"/>
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Distance: " android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/air_flow"/>
+
+    <TextView
+        android:id="@+id/input_rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp" android:layout_marginTop="24dp" android:text="RPM"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/engine_rpm"
+        app:layout_constraintTop_toBottomOf="@+id/device_name"/>
+    <TextView
+        android:id="@+id/input_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" android:layout_marginTop="24dp" android:text="SPEED"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/vehicle_speed"
+        app:layout_constraintTop_toBottomOf="@+id/input_rpm"/>
+    <TextView
+        android:id="@+id/input_coolant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" android:layout_marginTop="24dp" android:text="COOLANT"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/coolant_temp"
+        app:layout_constraintTop_toBottomOf="@+id/input_speed"/>
+    <TextView
+        android:id="@+id/input_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" android:layout_marginTop="24dp" android:text="AIR"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/air_flow"
+        app:layout_constraintTop_toBottomOf="@+id/input_coolant"/>
+    <TextView
+        android:id="@+id/input_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" android:layout_marginTop="24dp" android:text="DISTANCE"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/distance"
+        app:layout_constraintTop_toBottomOf="@+id/input_air"/>
+
+
+</android.support.constraint.ConstraintLayout>

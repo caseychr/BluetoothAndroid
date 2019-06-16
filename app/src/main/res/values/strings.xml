@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BluetoothAndroid</string>
+
+    <string name="cmd_reset">ATZ</string>
+    <string name="cmd_distance">0131</string>
+    <string name="cmd_engine_rpm">010C</string>
+    <string name="cmd_vehicle_speed">010D</string>
+    <string name="cmd_coolant_temp">0105</string>
+    <string name="cmd_air_flow">0110</string>
+
+</resources>
