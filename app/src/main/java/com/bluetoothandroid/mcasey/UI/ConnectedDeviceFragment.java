@@ -9,10 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.bluetoothandroid.mcasey.BluetoothService.BluetoothService;
-import com.bluetoothandroid.mcasey.BluetoothService.BluetoothDeviceController;
 import com.bluetoothandroid.mcasey.R;
+import com.driverapp.bluetoothandroidlibrary.BluetoothDeviceController;
+import com.driverapp.bluetoothandroidlibrary.BluetoothService;
 
 public class ConnectedDeviceFragment extends Fragment implements BluetoothDeviceView {
 
@@ -51,7 +50,7 @@ public class ConnectedDeviceFragment extends Fragment implements BluetoothDevice
         mAirFlow = view.findViewById(R.id.input_air);
         mDistance = view.findViewById(R.id.input_distance);
 
-        mConnectedDeviceController = new BluetoothDeviceController(BluetoothService.FULFILL_INPUTS);
+        mConnectedDeviceController = new BluetoothDeviceController(BluetoothService.POLLING);
         mConnectedDeviceController.init();
 
         return view;
